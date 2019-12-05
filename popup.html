@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Netcraft Extension</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" href="Style/popup.css"/>
+        <script type="text/javascript" src="JavaScript/jquery.min.js"></script>
+        <script type="text/javascript" src="JavaScript/constants.js"></script>
+        <script type="text/javascript" src="JavaScript/TrackTiming.js"></script>
+        <script type="text/javascript" src="JavaScript/popup.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Loading...</h1>
+            <div id="flag-container"><img id="flag"/></div>
+            <a href="#" id="sitereport" target="_blank">Site Report</a>
+        </header>
+        <div id="riskrank"></div>
+        <table>
+            <tr id="row1">
+                <td colspan="6" id="riskranktext"><span id="risktitle">Risk Rating: </span><span id="risk">-</span></td>
+            </tr>
+            <tr id="row2">
+                <td></td>
+                <td class="title">Country: </td>
+                <td class="value"><span id="country">-</span></td>
+
+                <td></td>
+                <td class="title">Site rank: </td>
+                <td class="value"><a href="#" id="rank" target="_blank">-</a></td>
+            </tr>
+            <tr id ="row3">
+                <td></td>
+                <td class="title">First seen: </td>
+                <td class="value"><a href="#" id="firstseen" target="_blank">-</a></td>
+
+                <td></td>
+                <td class="title">Host: </td>
+                <td class="value"><a href="#" id="hoster" target="_blank">-</a></td>
+            </tr>
+            <tr id="ssl">
+            </tr>
+            <tr id="ssl-hb">
+            </tr>
+        </table>
+        <footer>
+            <a href="http://www.netcraft.com" id="netcraft" target="_blank"><img src="Images/logo-small.png" alt="Netcraft" /></a>
+            <button id="reportPhish">Report phish</button>
+        </footer>
+    </body>
+
+</html>

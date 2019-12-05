@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Site Blocked - Netcraft Extension</title>
+        <link rel="stylesheet" href="Style/blocked.css" />
+        <script type="text/javascript" src="JavaScript/constants.js"></script>
+        <script type="text/javascript" src="JavaScript/jquery.min.js"></script>
+        <script type="text/javascript" src="JavaScript/blocked.js"></script>
+    </head>
+
+    <body>
+        <div>
+            <header>
+                <a href="http://www.netcraft.com" target="_blank"><img id="logo" src="Images/logo-large.png"></a>
+                <h1>Suspected Malicious Page</h1>
+            </header>
+            <p>This page has been blocked by the Netcraft Extension for the following reason:</p>
+            <p id="reason">Unknown</p>
+            <p id="url"></p>
+            <div>
+                <button id="markSafe">Report mistake</button>
+                <button id="visit">Visit anyway</button>
+            </div>
+        </div>
+    </body>
+</html>

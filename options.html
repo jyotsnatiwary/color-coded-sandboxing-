@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html>
+
+    <head>
+        <title>Netcraft Extension Options</title>
+        <link rel="stylesheet" href="Style/options.css" />
+        <script type="text/javascript" src="JavaScript/jquery.min.js"></script>
+        <script type="text/javascript" src="JavaScript/options.js"></script>
+    </head>
+
+    <body>
+        <div>
+            <header>
+                <a href="http://www.netcraft.com" target="_blank"><img id="logo" src="Images/logo-large.png"></a>
+                <h1>Netcraft Extension Options</h1>
+            </header>
+            <form>
+                <p>From here you can configure the extension settings. Your name and email address are used when submitting phish or mistake reports.</p>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" size="30" />
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" size="30" />
+                </div>
+                <div>
+                    <input id="block" type="checkbox" />
+                    <label for="block">Block phishing sites</label>
+                </div>
+                <div>
+                    <input id="xss" type="checkbox" />
+                    <label for="xss">Block XSS attacks</label>
+                </div>
+                <div>
+                    <input id="suspicious" type="checkbox" />
+                    <label for="suspicious">Warn about suspicious sites</label>
+                </div>
+            </form>
+            <footer>Copyright &copy; Netcraft Ltd. All rights reserved.</footer>
+        </div>
+    </body>
+</html>
