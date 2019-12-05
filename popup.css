@@ -1,0 +1,152 @@
+/*
+ * Netcraft Extension
+ * popup page style sheet
+ */
+
+body {
+    font-family: verdana, sans-serif;
+    font-size: 11px;
+    color: #303030;
+    width: 350px;
+}
+
+header {
+    text-align: center;
+}
+
+header img {
+    display: block;
+    margin: 0px auto;
+}
+
+h1 {
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 0px;
+    opacity: 0;
+}
+
+div#flag-container {
+    display:block;
+    text-align:center;
+    height: 48px;
+    width: 48px;
+    margin: auto;
+}
+
+#reason {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FF0000;
+    line-height: 25px;
+}
+
+table {
+    width: 100%;
+    border-bottom: 1px solid #303030;
+}
+
+td.title {
+    font-weight: bold;
+}
+
+td.title, td.value {
+    padding: 3px;
+}
+
+tr#ssl td.title, tr#ssl td.value{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+td#riskranktext {
+    text-align: center;
+    line-height: 25px;
+    border-bottom: 1px solid #303030;;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #0040AF;
+}
+
+a:hover {
+    color: #F38B18;
+}
+
+div#riskrank {
+    width: 100%;
+    height: 8px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333;
+    background-image: -webkit-linear-gradient(
+        left, 
+        #D00000 0%,  
+        #99FF33 0%
+    );
+}
+
+footer {
+    margin-top: 20px;
+    height: 30px;
+}
+
+button {
+    float: right;
+    width: 100px;
+    color: white;
+    padding: 3px 0px 4px 0px;
+    border: 1px solid #951100;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333;
+    background-image: -webkit-gradient(
+        linear, 
+        left top, 
+        left bottom, 
+        color-stop(0%, #EE432E), 
+        color-stop(100%, #891100)
+    );
+}
+
+button:hover {
+    cursor: pointer;
+    background-image: -webkit-linear-gradient(
+        top, 
+        #F37873 0%, 
+        #A20601 100%
+    );
+}
+
+.yes {
+    color: #007700;
+}
+
+.no {
+    color: #ff3333;
+}
+
+#pfswarn {
+    display: none;
+    width: 10px;
+    height: 9px;
+}
+
+#heartbleeddef {
+    border-bottom: 1px dashed #999;
+    cursor: help;
+}
+
+#heartbleedwarn {
+    display: none;
+    width: 9px;
+    height: 10px;
+}
+
+#heartbleedicon {
+    display: none;
+    width: 16px;
+    height: 16px;
+}

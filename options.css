@@ -1,0 +1,48 @@
+/*
+ * Netcraft Extension
+ * options page style sheet
+ */
+
+body {
+    font-family: verdana, sans-serif;
+    font-size: 11px;
+    color: #303030;
+    background-color: rgb(223,235,255);
+    text-align: center;
+}
+
+body > div {
+    width: 800px;
+    margin: 60px auto 0px auto;
+    padding: 10px 0px;
+    background: white;
+    border: 1px solid rgb(202,202,202);
+}
+
+header img {
+    width: 300px;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+form {
+    border-top: 5px solid rgb(75, 103, 159);
+    padding: 20px;
+}
+
+form p {
+    width: 600px;
+    text-align: justify;
+    line-height: 15px;
+    margin: 0px auto;
+}
+
+form div {
+    margin: 20px 0px 20px 0px;
+}
+
+label {
+    padding-bottom: 25px;
+}

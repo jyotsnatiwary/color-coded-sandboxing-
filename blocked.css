@@ -1,0 +1,93 @@
+/*
+ * Netcraft Extension
+ * options page style sheet
+ */
+
+body {
+    font-family: verdana, sans-serif;
+    font-size: 11px;
+    color: #303030;
+    background-color: #E6CFCF;
+    text-align: center;
+}
+
+body > div {
+    width: 800px;
+    margin: 60px auto 0px auto;
+    padding: 10px 0px;
+    background: white;
+    border: 1px solid rgb(202,202,202);
+}
+
+header {
+    border-bottom: 5px solid #FF0000;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 300px;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+#reason {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FF0000;
+    line-height: 25px;
+}
+
+button {
+    width: 100px;
+    color: white;
+    margin: 20px 5px 20px 5px;
+    padding: 3px 0px 4px 0px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+button:hover  {
+    cursor: pointer;
+}
+
+button#markSafe {
+    border: 1px solid #3D991F;
+    box-shadow: inset 0px 0px 0px 1px rgba(117, 255, 71, 0.4), 0 1px 3px #333;
+    background-image: -webkit-gradient(
+        linear, 
+        left top, 
+        left bottom, 
+        color-stop(0%, #66FF33), 
+        color-stop(100%, #14330A)
+    );
+}
+
+button#markSafe:hover  {
+    background-image: -webkit-linear-gradient(
+        top, 
+        #85FF5C 0%, 
+        #296614 100%
+	);
+}
+
+button#visit {
+    border: 1px solid #951100;
+    box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333;
+    background-image: -webkit-gradient(
+        linear, 
+        left top, 
+        left bottom, 
+        color-stop(0%, #EE432E), 
+        color-stop(100%, #891100)
+    );
+}
+
+button#visit:hover  {
+    background-image: -webkit-linear-gradient(
+        top, 
+        #F37873 0%, 
+        #A20601 100%
+	);
+}
