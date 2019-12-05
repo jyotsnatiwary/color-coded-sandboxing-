@@ -7,3 +7,12 @@ The basic idea is to have such a software that makes the user aware about the ma
 ![image](https://user-images.githubusercontent.com/43038862/70246266-7779d980-179d-11ea-8094-9b139ebcaa51.png)
 The picture depicts that all the websites with same netcraft risk rating that is 0 shows the same color. 
 
+
+![image](https://user-images.githubusercontent.com/43038862/70246364-a5f7b480-179d-11ea-9ea4-f7a93860febc.png)
+
+![image](https://user-images.githubusercontent.com/43038862/70246380-ab54ff00-179d-11ea-8372-62f119974338.png)
+
+![image](https://user-images.githubusercontent.com/43038862/70246399-b314a380-179d-11ea-93b6-935f11fab0f3.png)
+
+Here are the snapshots of the respective risk rating of the above mentioned websites; twitter, Wikipedia and google respectively. 
+
