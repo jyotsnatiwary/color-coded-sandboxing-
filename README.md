@@ -16,3 +16,11 @@ The picture depicts that all the websites with same netcraft risk rating that is
 
 Here are the snapshots of the respective risk rating of the above mentioned websites; twitter, Wikipedia and google respectively. 
 
+
+![image](https://user-images.githubusercontent.com/43038862/70246545-f0793100-179d-11ea-8c53-c508410df3b9.png)
+
+The risk rating of the website “bcebhagalpur.com” is 1. Hence it should display different color. All the websites with risk rating 1 should display the similar color.
+
+![image](https://user-images.githubusercontent.com/43038862/70246568-f838d580-179d-11ea-8f7b-9c426a1a94ac.png)
+
+Hence it can clearly be observed that the site with risk rating 1 shows up different color code.
