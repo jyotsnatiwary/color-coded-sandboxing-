@@ -1,0 +1,79 @@
+{
+   "permissions" : [
+      "tabs",
+      "webRequest",
+	  "contextMenus",
+      "menus",
+      "theme",
+      "storage",
+      "<all_urls>",
+      "*://*/"
+   ],
+   "version" : "1.12.0",
+   "name" : "Netcraft Extension",
+   "background" : {
+      "scripts" : [
+         "JavaScript/jquery.min.js",
+         "JavaScript/constants.js",
+         "JavaScript/TrackTiming.js",
+         "JavaScript/background.js",
+         "JavaScript/list-xss.js",
+         "JavaScript/settings.js",
+         "JavaScript/list-localblock.js"
+      ]
+   },
+   "icons" : {
+      "128" : "Images/icon-large.png",
+      "16" : "Images/icon-small.png",
+      "48" : "Images/icon-mid.png"
+   },
+   "description" : "Comprehensive site information and phishing protection when browsing the web",
+   "content_security_policy" : "script-src 'self'; object-src 'self'",
+   "content_scripts" : [
+      {
+         "matches" : [
+            "*://toolbar.netcraft.com/report_url?*",
+            "*://toolbar.netcraft.com/report_mistake?*"
+         ],
+         "js" : [
+            "JavaScript/constants.js",
+            "JavaScript/loadDetails.js",
+            "JavaScript/jquery.min.js"
+         ]
+      },
+      {
+         "run_at" : "document_start",
+         "matches" : [
+            "<all_urls>"
+         ],
+         "js" : [
+            "JavaScript/constants.js",
+            "JavaScript/jquery.min.js",
+            "JavaScript/check.js"
+         ],
+         "all_frames" : true
+      }
+   ],
+   "browser_action" : {
+      "default_popup" : "popup.html",
+      "default_title" : "",
+      "default_icon" : "Images/action-normal.png"
+   },
+   "sidebar_action": {
+    "default_title": "",
+    "default_icon": {
+      "16": "icon-128.png",
+      "20": "icon-128.png",
+      "24": "icon-128.png"
+    },
+    "default_panel": "sidebar.html",
+    "browser_style": true
+    },
+   "options_ui" : {
+      "page" : "options.html"
+   },
+   "web_accessible_resources" : [
+      "blocked.html"
+   ],
+   "manifest_version" : 2
+}
